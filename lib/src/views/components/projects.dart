@@ -19,7 +19,13 @@ class Projects extends StatelessWidget {
             children: WidgetUtils.skipNulls([
               Expanded(
                 flex: 2,
-                  child: Constants.subHeadingText(e.projectName)
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: FittedBox(
+                    fit: BoxFit.scaleDown,
+                      child: Constants.subHeadingText(e.projectName)
+                  ),
+                ),
               ),
               const Spacer(),
               e.playStoreLink != null ? Expanded(

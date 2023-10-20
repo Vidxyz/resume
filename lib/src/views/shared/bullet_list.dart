@@ -28,11 +28,13 @@ class InlineBulletList extends StatelessWidget {
                 ),
               ),
               WidgetUtils.spacer(2),
-              SizedBox(
-                height: 20,
-                child: FittedBox(
-                    fit: BoxFit.scaleDown,
-                    child: Constants.bulletPointText(text)
+              Expanded(
+                child: SizedBox(
+                  height: 20,
+                  child: FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Constants.bulletPointText(text)
+                  ),
                 ),
               ),
               // WidgetUtils.spacer(2)
