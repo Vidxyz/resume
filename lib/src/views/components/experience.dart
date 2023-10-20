@@ -4,6 +4,7 @@ import 'package:flutter_resume/src/utils/data.dart';
 import 'package:flutter_resume/src/utils/widget_utils.dart';
 import 'package:flutter_resume/src/views/shared/bullet_list.dart';
 
+// todo - rich text to bold stuff?
 class Experience extends StatelessWidget {
   const Experience({super.key});
 
