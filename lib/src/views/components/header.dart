@@ -23,7 +23,6 @@ class Header extends StatelessWidget {
         Center(
           child: Wrap(
             children: [
-              Spacer(),
               InkWell(
                 onTap: () {
                   launchUrl(Uri.parse("https://linkedin.com/in/vidxyz"));
@@ -58,7 +57,6 @@ class Header extends StatelessWidget {
                   style: Constants.nameHeadingTaglineTextStyle,
                 ),
               ),
-              Spacer(),
             ],
           ),
         )

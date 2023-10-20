@@ -20,9 +20,6 @@ class Experience extends StatelessWidget {
             WidgetUtils.spacer(2),
             Row(
               children: [
-                // Constants.subHeadingText(
-                //     e.companyName
-                // ),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
