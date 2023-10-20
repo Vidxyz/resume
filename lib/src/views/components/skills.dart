@@ -21,7 +21,7 @@ class Skills extends StatelessWidget {
         ...Data.bulletPointHeadings.map((e) {
           return [
             Constants.subHeadingText(e.title),
-            WidgetUtils.spacer(1),
+            WidgetUtils.spacer(2.5),
             Align(
               alignment: Alignment.centerLeft,
               child: InlineBulletList(e.items),
@@ -35,7 +35,7 @@ class Skills extends StatelessWidget {
       ...Data.pinnedBulletPointHeadings.map((e) {
           return [
             Constants.subHeadingText(e.title),
-            WidgetUtils.spacer(1),
+            WidgetUtils.spacer(2.5),
             ...e.headingToItemsMap.entries.map((entry) {
               return Align(
                 alignment: Alignment.centerLeft,

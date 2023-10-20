@@ -114,7 +114,7 @@ class BulletList extends StatelessWidget {
       widgetList.add(BulletListItem(text));
     }
 
-    return Wrap(runSpacing: 2.5,children: widgetList,);
+    return Wrap(runSpacing: 1, children: widgetList,);
   }
 }
 

@@ -10,45 +10,51 @@ class Education extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    final education = Data.education.map((e) {
+      return [
+        WidgetUtils.spacer(2),
+        Constants.subHeadingText(e.schoolName),
+        WidgetUtils.spacer(1),
+        Align(
+          alignment: Alignment.centerLeft,
+          child: Constants.subHeading2Text(e.degreeName),
+        ),
+        WidgetUtils.spacer(2),
+        Align(
+          alignment: Alignment.centerLeft,
+          child: Text(e.when),
+        ),
+        WidgetUtils.spacer(2),
+        Align(
+          alignment: Alignment.centerLeft,
+          child: InkWell(
+            onTap: () {
+              if (e.blurbLink != null) {
+                launchUrl(Uri.parse(e.blurbLink!));
+              }
+            },
+            child: Text(
+                e.blurb,
+                style: const TextStyle(
+                    color: Constants.primaryColor
+                )
+            ),
+          ),
+        ),
+      ];
+    }).toList().expand((element) =>
+      [...element, WidgetUtils.spacer(2.5), WidgetUtils.dashedHorizontalDivider(), WidgetUtils.spacer(2.5),]
+    ).toList();
+
+    // We remove the last spacer and horizontalDivider widgets
+    education.removeLast();
+    education.removeLast();
+
     return Column(
         children: [
         Constants.sectionHeadingText("EDUCATION"),
-
-          ...Data.education.map((e) {
-            return [
-              WidgetUtils.spacer(2),
-              Constants.subHeadingText(e.schoolName),
-              WidgetUtils.spacer(1),
-              Align(
-                alignment: Alignment.centerLeft,
-                child: Constants.subHeading2Text(e.degreeName),
-              ),
-              WidgetUtils.spacer(2),
-              Align(
-                alignment: Alignment.centerLeft,
-                child: Text(e.when),
-              ),
-              WidgetUtils.spacer(2),
-              Align(
-                alignment: Alignment.centerLeft,
-                child: InkWell(
-                  onTap: () {
-                    if (e.blurbLink != null) {
-                      launchUrl(Uri.parse(e.blurbLink!));
-                    }
-                  },
-                  child: Text(
-                      e.blurb,
-                      style: const TextStyle(
-                          color: Constants.primaryColor
-                      )
-                  ),
-                ),
-              ),
-            ];
-          }).toList().expand((element) =>
-          [...element, WidgetUtils.spacer(2.5), WidgetUtils.dashedHorizontalDivider(), WidgetUtils.spacer(2.5),]
-          )
+          ...education
         ]);
   }
 }

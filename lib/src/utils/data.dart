@@ -38,16 +38,14 @@ class Data {
           "Play",
           "Phoenix",
           "Ktor",
-          "Sprint",
+          "Spring",
           "Django",
           "Akka",
           "Express",
           "Android SDK",
           "Swift SDK",
           "Flutter SDK",
-          "Kafka",
           "Swing",
-          "Kubernetes",
           "Guice",
           "Flask",
           "Keras",
@@ -59,10 +57,11 @@ class Data {
         items: [
           "PostgreSQL",
           "MySQL",
-          "Athena",
+          "Neo4j",
+          "PrestoDB",
+          "BigQuery",
           "SQLite3",
           "Parse",
-          "Neo4j",
           "MongoDB",
         ]
     ),
@@ -71,15 +70,12 @@ class Data {
         items: [
           "Terraform",
           "Docker",
+          "Helm",
           "KOPS",
           "SOPS",
-          "KubeCTL",
+          "Kubectl",
           "Git",
           "CloudFormation",
-          "Elastic",
-          "Grafana",
-          "Prometheus",
-          "AlertManager",
         ]
     ),
     BulletPointHeading(
@@ -89,6 +85,27 @@ class Data {
           "Confluent/Apache Kafka",
           "GCP Pub/Sub",
           "RabbitMQ",
+        ]
+    ),
+    BulletPointHeading(
+        title: "MONITORING TOOLS",
+        items: [
+          "Elastic",
+          "Prometheus",
+          "Grafana",
+          "AlertManager",
+          "Opensearch",
+        ]
+    ),
+    BulletPointHeading(
+        title: "CI/CD",
+        items: [
+          "Kubernetes",
+          "Argo Workflows",
+          "ArgoCD",
+          "GitLab Pipelines",
+          "BitBucket Pipelines",
+          "GitHub Actions",
         ]
     ),
   ];
@@ -117,17 +134,17 @@ class Data {
         playStoreLink: "https://play.google.com/store/apps/details?id=app.cluein.cluein_app",
     ),
     ProjectHeading(
-        projectName: "President AI",
-        projectTechnologies: "Scala, Swing",
-        blurb: "Swing GUI application that lets you play the card game President",
-        gitHubLink: "https://github.com/Vidxyz/PresidentAI",
-    ),
-    ProjectHeading(
         projectName: "SpaceJunk",
         projectTechnologies: "Java, XML, LibGDX",
         blurb: "Platformer style Android game that allows you to escape reality momentarily",
         appStoreLink: "https://apps.apple.com/ca/app/spacejunk/id6469627395",
         playStoreLink: "https://play.google.com/store/apps/details?id=com.spacejunk.game"
+    ),
+    ProjectHeading(
+      projectName: "President AI",
+      projectTechnologies: "Scala, Swing",
+      blurb: "Swing GUI application that lets you play the card game President",
+      gitHubLink: "https://github.com/Vidxyz/PresidentAI",
     ),
     ProjectHeading(
         projectName: "CarPedia",
@@ -167,7 +184,8 @@ class Data {
         jobTitle: "DEVOPS ENGINEER",
         jobTime: "May 2022 - Present | Toronto, ON",
         points: [
-          "Implemented OIDC, SAML and LDAP based SSO for Prometheus, AlertManager, Opensearch and Nexus using Azure AD as the identity provider",
+          "Enabled declarative GitOps CD using ArgoCD to configure self healing kubernetes manifests across multiple clusters",
+          "Implemented OIDC, SAML and LDAP based SSO for Prometheus, ArgoCD, Opensearch Nexus using Azure AD as the identity provider",
           "Successfully migrated the teams' distributed logging solution to ingest GBs of logs on a daily basis from Elasticsearch to Opensearch using Helm charts and Terraform",
           "Worked with feature teams to introduce shared kustomize packages to avoid code duplication across kubernetes manifests",
           "Identified routes and designed rules to secure network access via Azure Firewall",

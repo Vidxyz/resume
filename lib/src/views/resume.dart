@@ -27,18 +27,20 @@ class Resume extends StatelessWidget {
                   // WidgetUtils.verticalDivider(),
                   // WidgetUtils.spacer(5),
                   Expanded(
-                    flex: 4,
+                    flex: 3,
                     child: Column(
                       children: [
+                        const Education(),
+
+                        WidgetUtils.spacer(5),
+                        WidgetUtils.horizontalDivider(),
+                        WidgetUtils.spacer(5),
                         const Skills(),
                         WidgetUtils.spacer(5),
                         WidgetUtils.horizontalDivider(),
                         WidgetUtils.spacer(5),
-                        const Projects(),
-                        WidgetUtils.spacer(5),
-                        WidgetUtils.horizontalDivider(),
-                        WidgetUtils.spacer(5),
-                        const Education(),
+
+
                       ],
                     ),
                   ),
@@ -49,6 +51,11 @@ class Resume extends StatelessWidget {
                     flex: 10,
                     child: Experience(),
                   ),
+                  WidgetUtils.spacer(5),
+                  const Expanded(
+                    flex: 4,
+                      child: Projects(),
+                  )
                   // WidgetUtils.spacer(5),
                   // WidgetUtils.verticalDivider(),
                 ],
