@@ -132,6 +132,7 @@ class Data {
         blurb: "Companion app to help you play the board game \"Clue\" better",
         appStoreLink: "https://apps.apple.com/ca/app/cluein/id6468943892",
         playStoreLink: "https://play.google.com/store/apps/details?id=app.cluein.cluein_app",
+        webLink: "https://vidxyz.github.io/ClueIn"
     ),
     ProjectHeading(
         projectName: "SpaceJunk",

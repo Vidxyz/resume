@@ -83,6 +83,19 @@ class Projects extends StatelessWidget {
           ),
         ),
         WidgetUtils.spacer(1),
+        e.webLink != null ? Align(
+          alignment: Alignment.centerLeft,
+          child: InkWell(
+            onTap: () {
+              launchUrl(Uri.parse(e.webLink!));
+            },
+            child: Text(
+              "View in browser",
+              style: Constants.bulletPointLinkTextStyle,
+            ),
+          ),
+        ) : null,
+        WidgetUtils.spacer(1),
         Constants.subHeading2Text(e.projectTechnologies),
         WidgetUtils.spacer(2),
         Align(
@@ -109,7 +122,7 @@ class Projects extends StatelessWidget {
           // WidgetUtils.horizontalDivider(),
           // WidgetUtils.spacer(2.5),
 
-          ...projects
+          ...WidgetUtils.skipNulls(projects)
         ]);
   }
 }

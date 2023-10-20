@@ -57,6 +57,11 @@ class Constants {
     color: Colors.black45,
   );
 
+  static TextStyle bulletPointLinkTextStyle = const TextStyle(
+    fontSize: 14,
+    color: primaryColor,
+  );
+
   static TextStyle experiencePointTextStyle = const TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.bold,

@@ -41,6 +41,7 @@ class ProjectHeading {
   final String? gitHubLink;
   final String? appStoreLink;
   final String? playStoreLink;
+  final String? webLink;
 
   ProjectHeading({
     required this.projectName,
@@ -49,6 +50,7 @@ class ProjectHeading {
     this.gitHubLink,
     this.appStoreLink,
     this.playStoreLink,
+    this.webLink,
   });
 }
 
