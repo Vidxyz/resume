@@ -149,7 +149,7 @@ class Data {
     ),
     ProjectHeading(
         projectName: "CarPedia",
-        projectTechnologies: "Dart, Flutter, Elixir, Phoenix, Absinthe, Docker",
+        projectTechnologies: "Dart, Flutter, Elixir, Phoenix, Absinthe, Python, Docker, Postgres",
         blurb: "Cross platform mobile application that allows you to view, filter and save data pertaining ot thousands of cars, with data being served by a Rest/GraphQL API",
         gitHubLink: "https://github.com/Vidxyz/CarDataMobileApp"
     ),
