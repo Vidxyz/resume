@@ -25,10 +25,10 @@ class Header extends StatelessWidget {
             children: [
               InkWell(
                 onTap: () {
-                  launchUrl(Uri.parse("https://linkedin.com/in/vidxyz"));
+                  launchUrl(Uri.parse("https://vidxyz.github.io"));
                 },
                 child: Text(
-                  "https://linkedin.com/in/vidxyz",
+                  "https://vidxyz.github.io",
                   style: Constants.nameHeadingTaglineTextStyle,
                 ),
               ),
@@ -54,6 +54,21 @@ class Header extends StatelessWidget {
                 },
                 child: Text(
                     "vdhysgr@gmail.com",
+                  style: Constants.nameHeadingTaglineTextStyle,
+                ),
+              ),
+              WidgetUtils.spacer(5),
+              SizedBox(
+                  height: 25,
+                  child: WidgetUtils.verticalDivider()
+              ),
+              WidgetUtils.spacer(5),
+              InkWell(
+                onTap: () {
+                  launchUrl(Uri.parse("https://linkedin.com/in/vidxyz"));
+                },
+                child: Text(
+                  "https://linkedin.com/in/vidxyz",
                   style: Constants.nameHeadingTaglineTextStyle,
                 ),
               ),
