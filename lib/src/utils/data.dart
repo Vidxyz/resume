@@ -186,7 +186,7 @@ class Data {
         jobTime: "May 2022 - Present | Toronto, ON",
         points: [
           "Enabled declarative GitOps CD using ArgoCD to configure self healing kubernetes manifests across multiple clusters",
-          "Implemented OIDC, SAML and LDAP based SSO for Prometheus, ArgoCD, Opensearch Nexus using Azure AD as the identity provider",
+          "Implemented OIDC, SAML and LDAP based SSO for Prometheus, ArgoCD, Opensearch & Nexus using Azure AD as the identity provider",
           "Successfully migrated the teams' distributed logging solution to ingest GBs of logs on a daily basis from Elasticsearch to Opensearch using Helm charts and Terraform",
           "Worked with feature teams to introduce shared kustomize packages to avoid code duplication across kubernetes manifests",
           "Identified routes and designed rules to secure network access via Azure Firewall",
