@@ -211,7 +211,7 @@ class Data {
           "Worked on a variety of features in react/react-native such as rendering user avatars on building floorplans, creating modals for various data exports as well as integrating booking schedules into a calendar-like view",
           "Worked on integrating in-app calendar info with user's email calendar using Microsoft/Google Calendar APIs to propagate changes and maintain sync",
           "Configure log based alerts and published them to Slack channels via web hooks for easy visibility into cloud deployments",
-          "Worked extensively on maintaining and upgrading the GCP inftrastructure, including updating SSL certificates, maintaining Kubernetes manifests, configuring Kafka clusters as well as keeping CI/CD pipelines up to date",
+          "Worked extensively on maintaining and upgrading the GCP infrastructure, including updating SSL certificates, maintaining Kubernetes manifests, configuring Kafka clusters as well as keeping CI/CD pipelines up to date",
         ],
       iconPath: "billie.png",
     ),
