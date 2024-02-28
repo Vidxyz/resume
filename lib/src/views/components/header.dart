@@ -39,7 +39,7 @@ class Header extends StatelessWidget {
               ),
               WidgetUtils.spacer(5),
               Text(
-                  "Problem solver, Tech explorer, Software engineer",
+                  "Versatile engineer with a knack for learning and delivery",
                 style: Constants.nameHeadingTaglineTextStyle,
               ),
               WidgetUtils.spacer(5),

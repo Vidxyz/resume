@@ -88,6 +88,14 @@ class Data {
         ]
     ),
     BulletPointHeading(
+        title: "REVERSE PROXIES",
+        items: [
+          "Nginx",
+          "HAProxy",
+          "Envoy",
+        ]
+    ),
+    BulletPointHeading(
         title: "MONITORING TOOLS",
         items: [
           "Elastic",
@@ -196,7 +204,7 @@ class Data {
     ),
     Experience(
         companyName: "BILLIE APP",
-        jobTitle: "FULL STACK ENGINEER",
+        jobTitle: "SENIOR FULL STACK ENGINEER",
         jobTime: "May 2021 - May 2022 | Toronto, ON",
         points: [
           "Designed Scala based APIs for key features such as exporting user login data, reconfiguring SSO providers and applying constraints & schedules to booking spaces",
