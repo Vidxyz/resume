@@ -220,7 +220,7 @@ class Data {
         jobTitle: "SOFTWARE ENGINEER",
         jobTime: "July 2019 - May 2021 | Toronto, ON",
         points: [
-          "Designed and implemented a reliable and efficient data-pipeline in Kotlin and Elixir to perform ETL on large amounts of POS data",
+          "Designed and implemented a burstable data-pipeline on EKS with Kotlin and Elixir to operate on large POS datasets using SQS as the message broker",
           "Architected and implemented a database schema & microservice to allow users to create widgets with filters showing a variety of metrics",
           "Developed a novel solution to precache common user requests using Akka streams to speed up response times by 10x",
           "Built REST/GraphQL APIs to retrieve data as well as perform authentication workflows in Scala & Elixir",
