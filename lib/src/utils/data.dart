@@ -190,7 +190,7 @@ class Data {
   static final List<Experience> experience = [
     Experience(
         companyName: "IMPROVING, OTTAWA",
-        jobTitle: "DEVOPS ENGINEER",
+        jobTitle: "SENIOR CONSULTANT - DEVOPS ENGINEER",
         jobTime: "May 2022 - Present | Toronto, ON",
         points: [
           "Enabled declarative GitOps CD using ArgoCD to configure self healing kubernetes manifests across multiple clusters",
