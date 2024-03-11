@@ -224,7 +224,7 @@ class Data {
           "Architected and implemented a database schema & microservice to allow users to create widgets with filters showing a variety of metrics",
           "Developed a novel solution to precache common user requests using Akka streams to speed up response times by 10x",
           "Built REST/GraphQL APIs to retrieve data as well as perform authentication workflows in Scala & Elixir",
-          "Created a staging environment on AWS for the development teams and set up CI/CD pipelins for automated deployments to stable code to Kubernetes clusters",
+          "Created a staging environment on AWS for the development teams and set up CI/CD pipelines for automated deployments to stable code to Kubernetes clusters",
         ],
       iconPath: "askuity.png",
     ),
