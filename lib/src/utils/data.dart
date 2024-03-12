@@ -70,11 +70,13 @@ class Data {
         items: [
           "Terraform",
           "Docker",
-          "Helm",
-          "KOPS",
-          "SOPS",
           "Kubectl",
           "Git",
+          "Helm",
+          "Sbt",
+          "Maven",
+          "KOPS",
+          "SOPS",
           "CloudFormation",
         ]
     ),
