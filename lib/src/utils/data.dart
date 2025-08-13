@@ -5,8 +5,8 @@ class Data {
     PinnedBulletPointHeading(
         title: "CLOUD TECHNOLOGIES",
         headingToItemsMap: {
-          "AWS": "S3, EC2, ECR, SQS, RDS, Athena, IAM, CloudWatch",
-          "GCP": "GCR, GCS, GKE, Pub/Sub, BigQuery, GCE",
+          "AWS": "EKS, S3, EC2, ECR, SQS, RDS, Athena, IAM, CloudWatch",
+          "GCP": "GKE, GCS, GCR, Pub/Sub, BigQuery, GCE",
           "Azure": "AKS, AKV, VMSS, WAF, AAD",
         }
     ),
@@ -18,16 +18,17 @@ class Data {
         items: [
           "Scala",
           "Elixir",
+          "Python",
           "Kotlin",
           "Dart",
           "Java",
-          "Python",
           "C++",
           "JavaScript",
+          "TypeScript",
           "Node.JS",
           "HTML",
           "CSS",
-          "jQuery",
+          "Go",
           "Swift",
           "Bash",
         ]
@@ -36,11 +37,13 @@ class Data {
         title: "FRAMEWORKS",
         items: [
           "Play",
-          "Phoenix",
-          "Ktor",
-          "Spring",
-          "Django",
+          "FastAPI",
           "Akka",
+          "Phoenix",
+          "Spring",
+          "Airflow",
+          "Ktor",
+          "Django",
           "Express",
           "Android SDK",
           "Swift SDK",
@@ -57,12 +60,13 @@ class Data {
         items: [
           "PostgreSQL",
           "MySQL",
+          "MongoDB",
           "Neo4j",
           "PrestoDB",
           "BigQuery",
-          "SQLite3",
+          "SQLite",
+          "Elasticsearch",
           "Parse",
-          "MongoDB",
         ]
     ),
     BulletPointHeading(
@@ -74,6 +78,7 @@ class Data {
           "Git",
           "Helm",
           "Sbt",
+          "Uv",
           "Maven",
           "KOPS",
           "SOPS",
@@ -83,9 +88,9 @@ class Data {
     BulletPointHeading(
         title: "MESSAGE BROKERS",
         items: [
+          "GCP Pub/Sub",
           "AWS SQS",
           "Confluent/Apache Kafka",
-          "GCP Pub/Sub",
           "RabbitMQ",
         ]
     ),
@@ -104,13 +109,14 @@ class Data {
           "Prometheus",
           "Grafana",
           "AlertManager",
-          "Opensearch",
+          "Opensearch"
         ]
     ),
     BulletPointHeading(
         title: "CI/CD",
         items: [
           "Kubernetes",
+          "CircleCI",
           "Argo Workflows",
           "ArgoCD",
           "GitLab Pipelines",
@@ -191,9 +197,22 @@ class Data {
 
   static final List<Experience> experience = [
     Experience(
+      companyName: "OKTA",
+      jobTitle: "SENIOR SOFTWARE ENGINEER - RELEASE AND CORESERVICES",
+      jobTime: "May 2024 - Present | Toronto, ON",
+      points: [
+        "Led the design & implementation of a step registry framework using FastAPI, Airflow, and CircleCI, which serves as CI middleware across different systems",
+        "Devised & engineered a system to perform mandatory malware scans on all release candidates, mitigating supply chain attacks & ensuring security compliance",
+        "Engineered full-stack self-service workflows (React, FastAPI, Airflow) to automate common user requests, reducing turnaround times from days to minutes",
+        "Engineered a company-wide policy enforcer for the enforcement of short-lived Github tokens, revoking those past their deadline and compiling reports for review",
+        "Optimized to the core Okta release pipeline, cutting delivery times by 25%",
+      ],
+      iconPath: "okta.png",
+    ),
+    Experience(
         companyName: "IMPROVING, OTTAWA",
         jobTitle: "SENIOR CONSULTANT - DEVOPS ENGINEER",
-        jobTime: "May 2022 - Present | Toronto, ON",
+        jobTime: "May 2022 - May 2024 | Toronto, ON",
         points: [
           "Implemented GitOps CD using ArgoCD to configure self healing kubernetes manifests across multiple clusters",
           "Developed single sign-on SSO solutions for Prometheus, ArgoCD, OpenSearch & Nexus using Azure AD as the identity provider",
