@@ -198,44 +198,42 @@ class Data {
   static final List<Experience> experience = [
     Experience(
       companyName: "OKTA",
-      jobTitle: "SENIOR SOFTWARE ENGINEER - RELEASE AND CORESERVICES",
+      jobTitle: "SENIOR SOFTWARE ENGINEER, DEVELOPER FOUNDATIONS",
       jobTime: "May 2024 - Present | Toronto, ON",
       points: [
-        "Led the design & implementation of a step registry framework using FastAPI, Airflow, and CircleCI, which serves as CI middleware across different systems",
-        "Devised & engineered a system to perform mandatory malware scans on all release candidates, mitigating supply chain attacks & ensuring security compliance",
-        "Engineered full-stack self-service workflows (React, FastAPI, Airflow) to automate common user requests, reducing turnaround times from days to minutes",
-        "Engineered a company-wide policy enforcer for the enforcement of short-lived Github tokens, revoking those past their deadline and compiling reports for review",
-        "Optimized to the core Okta release pipeline, cutting delivery times by 25%",
+        "Standardized CI solutions across the organization by architecting an extensible step registry platform that replaced fragmented pipelines across different CI systems with a unified middleware",
+        "Led the zero-downtime migration of a core authentication service from Falcon to FastAPI by upgrading 100% of the API surface to increase throughput and concurrency without customer impact",
+        "Integrated mandatory malware scanning into the core release platform, encoding supply-chain security compliance into the default delivery path without compromising developer velocity",
+        "Eliminated a 10-day organizational bottleneck by engineering a self-service artifact promotion model via build-time middleware, decentralizing ownership to product teams for immediate execution",
+        "Pitched & engineered a full-stack self-service portal (React/FastAPI/Airflow) that collapsed a multiple day SLO into instant execution, creating an extensible framework now adopted by multiple teams",
+        "Engineered a policy enforcement engine to translate high-level security mandates into concrete requirements, migrating the organization to short-lived GitHub tokens at scale"
       ],
       iconPath: "okta.png",
     ),
     Experience(
         companyName: "IMPROVING, OTTAWA",
-        jobTitle: "SENIOR CONSULTANT - DEVOPS ENGINEER",
+        jobTitle: "SENIOR DEVOPS ENGINEER",
         jobTime: "May 2022 - May 2024 | Toronto, ON",
-        points: [
-          "Implemented GitOps CD using ArgoCD to configure self healing kubernetes manifests across multiple clusters",
-          "Developed single sign-on SSO solutions for Prometheus, ArgoCD, OpenSearch & Nexus using Azure AD as the identity provider",
-          "Led the migration of distributed logging solution from Elasticsearch to OpenSearch to handle daily ingestion of 50+ GBs of logs using Helm charts and Terraform",
-          "Established CI/CD pipelines with semantic versioning to deploy workloads on AKS",
-          "Utilized Terraform extensively for Azure and AKS cluster resource management",
-          "Worked with feature teams to introduce shared Kustomize packages to avoid code duplication across kubernetes manifests",
-          "Audited routes and designed rules to secure VPC networks using Azure Firewall",
-          "Collaborated with various teams to perform frequent production releases",
-        ],
+      points: [
+        "Architected a cost-efficient migration of a 50+ GB/day logging platform from Elasticsearch to OpenSearch, utilizing FluentBit to reduce compute overhead & licensing costs",
+        "Standardized Kubernetes delivery by implementing ArgoCD GitOps workflows, increasing deployment transparency and velocity across all production clusters",
+        "Unified organizational access control by engineering OIDC, SAML, and LDAP integrations for internal portals, fulfilling security mandates through centralized SSO",
+        "Decentralized infrastructure management by designing modular Terraform and Kustomize packages, enabling teams to self-serve scalable Azure and AKS resources",
+        "Utilized Terraform for Azure resource management and collaborated with operations teams for scheduled production releases",
+        "Audited routes and designed rules to secure VPC networks using Azure Firewall",
+      ],
       iconPath: "improving.png",
     ),
     Experience(
         companyName: "BILLIE APP",
         jobTitle: "SENIOR FULL STACK ENGINEER",
         jobTime: "May 2021 - May 2022 | Toronto, ON",
-        points: [
-          "Designed Scala based APIs for key features, including auth workflows with multiple SSO providers, exporting user login data, & applying booking constraints to spaces",
-          "Implemented end-end features in react/react-native to render user avatars on building floor plans, create modals for data exports as well as integrate schedules into a calendar-like view",
-          "Integrated in-app calendar info with user’s email calendar using Outlook/Google Calendar APIs to ensure bidirectional synchronization of changes",
-          "Configured log based alerts and published them to Slack channels via web hooks for easy visibility into cloud deployments",
-          "Managed infrastructure in GCP, including maintaining kubernetes manifests, rotation of SSL Certificates, configuring artifact managers, self-hosting Kafka clusters as well as creating CI/CD pipelines in GitLab as required",
-        ],
+      points: [
+        "Engineered scalable Scala APIs to govern complex authentication workflows, high-volume data exports, and real-time booking constraints",
+        "Developed high-interaction UI components in React and React Native, including dynamic floor plans and data-rich schedule views, to improve user engagement",
+        "Architected bidirectional calendar synchronization with Google and Microsoft APIs, ensuring seamless scheduling consistency across external and in-app platforms",
+        "Orchestrated cloud-native infrastructure across GCP and Kubernetes, managing Kafka clusters and CI/CD pipelines to ensure high availability for core services",
+      ],
       iconPath: "billie.png",
     ),
     Experience(
@@ -243,11 +241,11 @@ class Data {
         jobTitle: "SOFTWARE ENGINEER",
         jobTime: "July 2019 - May 2021 | Toronto, ON",
         points: [
-          "Designed and implemented a burstable data-pipeline on EKS with Kotlin and Elixir to operate on large POS datasets using SQS as the message broker",
-          "Architected and implemented a database schema & microservice to allow users to create widgets with filters showing a variety of metrics",
-          "Developed a novel solution to precache common user requests using Akka streams to speed up response times by 10x",
-          "Built REST/GraphQL APIs to retrieve data as well as perform authentication workflows in Scala & Elixir",
-          "Created a staging environment on AWS for the development teams and set up CI/CD pipelines for automated deployments to stable code to Kubernetes clusters",
+          "Engineered a burstable data pipeline on EKS using Kotlin and Elixir, utilizing SQS message brokering to handle high-concurrency workloads",
+          "Architected a metrics microservice that enabled dynamic, user-generated data widgets, expanding the platform’s custom reporting capabilities",
+          "Accelerated API performance 10x by implementing an Akka Streams pre-caching solution for high-traffic endpoints",
+          "Developed multi-stack REST and GraphQL APIs in Scala and Elixir to handle core authentication and complex CRUD operations at scale",
+          "Established a staging environment on AWS for the development teams and configured CI/CD pipelines for automated deployments to Kubernetes clusters",
         ],
       iconPath: "askuity.png",
     ),
@@ -256,16 +254,15 @@ class Data {
         jobTitle: "SOFTWARE ENGINEER",
         jobTime: "May 2017 - Dec 2017, May 2018 - Oct 2018 | Toronto, ON",
         points: [
-          "Saved roughly \$250,000 in potential fraud losses by developing a patented algorithm for real-time fraud detection using graph databases",
+          "Developed a patented algorithm for real-time fraud detection using graph databases, saving an estimated \$250,000 in its pilot program",
+          "Engineered event-driven insolvency workflows within a Kafka-based Spring microservice to streamline complex financial processing",
           "Released version 1.3 of the Capital One Android app loaded with new features built from the ground up on the play store",
-          "Gained immense experience working with a variety of AWS technologies, including RedShift, S3, & EC2 through the deployment of infrastructure using Terraform",
-          "Worked on Kafka based Spring microservices to add insolvency specific features to streamline operations and cut costs",
-        ],
+        ]
       iconPath: "capital_one.png",
     ),
     Experience(
       companyName: "INTELLIGENT MECHATRONIC SYSTEMS",
-      jobTitle: "MOBILE DEVELOPER",
+      jobTitle: "INTERN - MOBILE DEVELOPER",
       jobTime: "Sep 2016 - Dec 2016 | Waterloo, ON",
       points: [
         "Designed and implemented the Personal Leaderboards component in the IMS  Android app that allowed users to create personal groups compare trip scores",
@@ -275,8 +272,8 @@ class Data {
       iconPath: "ims.png",
     ),
     Experience(
-      companyName: "INTEL CORPORATION, INTEL SECURITY",
-      jobTitle: "SOFTWARE DEVELOPER",
+      companyName: "INTEL",
+      jobTitle: "INTERN - SOFTWARE DEVELOPER",
       jobTime: "Jan 2016 - Apr 2016 | Waterloo, ON",
       points: [
         "Saved 30+ hours/week of collective manual effort by designing a web application using Python/Django to fully automate the generation of quality metrics",
@@ -287,7 +284,7 @@ class Data {
     ),
     Experience(
       companyName: "SAP",
-      jobTitle: "SOFTWARE QUALITY ASSURANCE",
+      jobTitle: "INTERN - SOFTWARE QUALITY ASSURANCE",
       jobTime: "May 2015 - Aug 2015 | Waterloo, ON",
       points: [
         "One of two software QAs responsible for performing regression and GUI tests using Python",
