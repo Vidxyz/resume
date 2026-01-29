@@ -257,7 +257,7 @@ class Data {
           "Developed a patented algorithm for real-time fraud detection using graph databases, saving an estimated \$250,000 in its pilot program",
           "Engineered event-driven insolvency workflows within a Kafka-based Spring microservice to streamline complex financial processing",
           "Released version 1.3 of the Capital One Android app loaded with new features built from the ground up on the play store",
-        ]
+        ],
       iconPath: "capital_one.png",
     ),
     Experience(
