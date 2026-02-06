@@ -138,6 +138,18 @@ class Data {
 
   static final List<ProjectHeading> projects = [
     ProjectHeading(
+        projectName: "BuyIt",
+        projectTechnologies: "Etsy-like e-commerce platform built with scale in mind",
+        blurb: "Kotlin, Scala, Go, React, Kafka, Terraform, Kubernetes, Postgres, Opensearch",
+        webLink: "https://github.com/Vidxyz/paypoc"
+    ),
+    ProjectHeading(
+      projectName: "Balderdash",
+      projectTechnologies: "Phoenix, React, Elixir, Typescript, Terraform, Kubernetes",
+      blurb: "Host your party and play an online version of the popular board game",
+      webLink: "https://github.com/Vidxyz/balderdash"
+    ),
+    ProjectHeading(
         projectName: "Fitcentive",
         projectTechnologies: "Scala, Elixir, Flutter, Terraform, Kubernetes, GCP, Neo4j, Postgres",
         blurb: "Social fitness app aimed at helping you discover people with similar interests",
