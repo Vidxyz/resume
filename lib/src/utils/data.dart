@@ -138,10 +138,28 @@ class Data {
 
   static final List<ProjectHeading> projects = [
     ProjectHeading(
+        projectName: "DealMeIn",
+        projectTechnologies: "Next.js, Cloudflare Workers, Durable Objects, Hono, TypeScript, Turborepo",
+        blurb: "Virtual card table for phones — create a room, deal cards privately, and play any card game with real-time WebSocket sync",
+        webLink: "https://dealmein.vercel.app/"
+    ),
+    ProjectHeading(
         projectName: "BuyIt",
         projectTechnologies: "Etsy-like e-commerce platform built with scale in mind",
         blurb: "Kotlin, Scala, Go, React, Kafka, Terraform, Kubernetes, Postgres, Opensearch",
         webLink: "https://github.com/Vidxyz/paypoc"
+    ),
+    ProjectHeading(
+        projectName: "moviguessr",
+        projectTechnologies: "Next.js, Cloudflare Workers, Hono, TypeScript",
+        blurb: "Guess the movie from its gradually unblurring poster — speed bonuses, streak multipliers, and 600+ curated titles",
+        webLink: "https://moviguessr.vercel.app/"
+    ),
+    ProjectHeading(
+        projectName: "tickrguessr",
+        projectTechnologies: "Next.js, Cloudflare Workers, Hono, TradingView, TypeScript",
+        blurb: "Guess the stock from its normalised price chart across five time windows — sector-matched decoys, streaks, and speed scoring",
+        webLink: "https://tickrguessr.vercel.app/"
     ),
     ProjectHeading(
       projectName: "Balderdash",
